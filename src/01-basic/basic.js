@@ -1,11 +1,12 @@
-export default function sum(num) {
-  let result = 0;
-  if (typeof num !== 'number') {
-    return `숫자를 넣어주세요`;
-  } else {
-    for (let item of arguments) {
-      result += item;
+//
+export default function sum() {
+  const arr = Array.from(arguments);
+  const arrSum = arr.reduce((acc, item) => acc + item, 0);
+
+  for (const item of arr) {
+    if (typeof item !== 'number') {
+      return `숫자를 넣어주세요`;
     }
-    return result;
+    return arrSum;
   }
 }
