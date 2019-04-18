@@ -1,4 +1,3 @@
-//
 export default function sum() {
   const arr = Array.from(arguments);
   const arrSum = arr.reduce((acc, item) => acc + item, 0);
