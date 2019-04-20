@@ -1,6 +1,5 @@
 export default class Counter {
   constructor(INIT_COUNT) {
-    // 초기화, 속성
     this.count = typeof INIT_COUNT === 'number' ? INIT_COUNT : 0;
   }
   getCount() {
